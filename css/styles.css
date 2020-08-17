@@ -1,0 +1,20 @@
+/*
+* Hoja de estilos principal */
+
+@font-face {
+    font-family: "BaskervilleMTStd";
+    src: url("../fonts/BaskervilleMTStd-Italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTStd";
+    src: url("../fonts/HelveticaNeueLTStd-Roman.otf") format("opentype");
+}
+
+body {
+    font-family: 'HelveticaNeueLTStd';
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'BaskervilleMTStd';
+}
