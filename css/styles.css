@@ -11,28 +11,37 @@
     src: url("../fonts/HelveticaNeueLTStd-Roman.otf") format("opentype");
 }
 
-body, p {
+body {
     font-family: 'HelveticaNeueLTStd';
-    font-size: 16px;
+    font-size: 0.8rem;
     color: #fff;
     background-color: #22262f;
 }
 
 h1,h2,h3,h4,h5 {
     font-family: 'BaskervilleMTStd';
+    letter-spacing: 0.1rem;
+}
+
+.h1, h1 {
+    font-size: 1.6rem;
+}
+
+.h2, h2 {
+    font-size: 1.4rem;
 }
 
 /* Menu */
 
 .menu {
     font-size: 0.8rem;
-    padding: .5rem 5rem;
+    padding: .4rem 1rem;
     letter-spacing: 0.2rem;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .menu .navbar-brand img {
-    height: 40px;
+    height: 25px;
     width: auto;
 }
 
@@ -44,12 +53,16 @@ h1,h2,h3,h4,h5 {
 /* Carrusel */
 
 .carousel-caption {
-    top: 46%;
+    top: 30%;
+}
+
+.carousel-indicators {
+    margin-bottom: 0rem;
 }
 
 .carousel-indicators li {
-    height: 10px;
-    width: 10px;
+    height: 6px;
+    width: 6px;
     border-radius: 50%;
     margin-left: 5px;
     margin-right: 5px;
@@ -57,27 +70,36 @@ h1,h2,h3,h4,h5 {
 
 /* Contenido principal */
 
-.item-info {
-    margin-left: 6rem;
-    margin-right: 6rem;
+.item-wrapper {
+    min-height: 40vh;
 }
 
-.item-info .title h1 {
+.item-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-info {
+    margin: 2rem;
+}
+
+.item-info .item-title h2 {
     margin-bottom: 0rem;
 }
 
-.item-info .title::after {
+.item-info .item-title::after {
     content: '';
     position: relative;
     display: block;
     bottom: 0;
     background-color: #fff;
     height: 2px;
-    width: 50px;
-    margin: 1.5rem 0;
+    width: 40px;
+    margin: 0.8rem 0;
 }
 
-.item-info:hover .title::after {
+.item-info:hover .item-title::after {
     width: 100%;
     animation: pulse 200ms ease-in-out;
 }
@@ -95,4 +117,108 @@ h1,h2,h3,h4,h5 {
 
 footer {
     background-color: #191c23;
+}
+
+footer img {
+    height: 25px;
+    width: auto;
+}
+
+/* Media querys */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .item-wrapper {
+        min-height: 70vh;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .h1, h1 {
+        font-size: 2rem;
+    }
+
+    .h2, h2 {
+        font-size: 1.6rem;
+    }
+
+    .menu {
+        padding: .5rem 2rem;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 1rem;
+    }
+
+    .carousel-caption {
+        top: 40%;
+    }
+
+    .carousel-indicators li {
+        height: 10px;
+        width: 10px;
+    }
+
+    .item-wrapper {
+        min-height: 30vh;
+    }
+
+    .item-info {
+        margin: 2rem;
+    }
+
+    .item-info .item-title::after {
+        width: 50px;
+        margin: 1rem 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .h1, h1 {
+        font-size: 2.5rem;
+    }
+    
+    .h2, h2 {
+        font-size: 2rem;
+    }
+    
+    .menu {
+        padding: .5rem 5rem;
+    }
+
+    .menu .navbar-brand img {
+        height: 40px;
+    }
+
+    .carousel-caption {
+        top: 46%;
+    }
+
+    .item-wrapper {
+        min-height: 60vh;
+    }
+
+    .item-info {
+        margin: 2rem 6rem;
+    }
+
+    .item-info .item-title::after {
+        margin: 1.5rem 0;
+    }
+
+    footer img {
+        height: 40px;
+        width: auto;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
 }
