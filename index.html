@@ -4,15 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loftminimal</title>
+    <link rel="icon" type="image/png" href="assets/AguaBlacklogo.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <h1 class="text-center">Loftminimal</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad cupiditate dignissimos, enim dolorum nam unde voluptas quae id asperiores, rem error, debitis commodi qui? Blanditiis aliquid ea possimus repellat facere.</p>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">LISTINGS <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JUAN ANTONIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="assets/instagram.png" alt="" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fin menu -->
+
+    <!-- Carrusel-->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/iStock-478952680-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Live and Invest in Medellín.</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/iStock-478952680-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Medellin is changing and growing. Fast.</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/iStock-478952680-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Start experiencing life</h1>
+            </div>
+          </div>
+        </div>
     </div>
-    
+    <!-- fin carrusel -->
+
+    <!-- contenido principal -->
+    <div class="row no-gutters bg-dark">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center px-5">
+            <div>
+                <h1>Live and Invest in Medellín.</h1>
+                <p>Loftminimal is a customized, Medellin-located, real-estate agency specialized in investors as well as state-of-the-art residential properties.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <img src="assets/iStock-905942188.png" class="img-fluid" alt="">
+        </div>
+    </div>
+    <div class="row no-gutters bg-dark">
+        <div class="col-12 col-md-6">
+            <img src="assets/Mask Group 1.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center px-5">
+            <div>
+                <h1>Medellin is changing and growing. Fast.</h1>
+                <h4>Faster than many could ever expect, but at Loftminimal we are aware of this.</h4>
+                <p>That’s why we trust you with true professionals at the moment of buying or selling a property in one of major development centers of the Americas, because based under the principle of PEOPLE FIRST we know that your trust and confidence is key when your next investment is on the table.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters bg-dark">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center px-5">
+            <div>
+                <h1>Start experiencing life</h1>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <img src="assets/iStock-499887682.png" class="img-fluid" alt="">
+        </div>
+    </div>
+    <!-- contenido principal -->
+
+    <!-- Footer -->
+    <footer class="bg-dark py-3 text-center">
+        <img src="assets/logo_footeer.png" class="img-fluid" alt="">
+        <img src="assets/instagram.png" class="img-fluid" alt="">
+    </footer>
+    <!-- Fin Footer -->
+
+    <!-- Scripts JS-->
+    <script src="js/jquery-3.5.1.min.js"></script>    
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
